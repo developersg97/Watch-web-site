@@ -1,0 +1,167 @@
+nav.navbar.bootsnav {
+  background: none;
+  border: none;
+}
+nav.navbar.bootsnav ul.nav > li {
+  margin-right: 15px;
+}
+nav.navbar.bootsnav ul.nav > li > a {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s ease-out;
+}
+nav.navbar.bootsnav ul.nav > li.dropdown > a {
+  padding: 5px 18px 5px 5px;
+}
+nav.navbar.bootsnav ul.nav > li.active > a,
+nav.navbar.bootsnav ul.nav > li.active > a:hover,
+nav.navbar.bootsnav ul.nav > li > a:hover,
+nav.navbar.bootsnav ul.nav > li.on > a {
+  color: #555;
+  background: transparent !important;
+  border: none;
+}
+nav.navbar.bootsnav ul.nav > li > a > span:before {
+  content: "";
+  background: #fcd462;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transform: rotateX(-90deg) rotate(50deg);
+  transform-style: preserve-3d;
+  transform-origin: 0 50%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+nav.navbar.bootsnav ul.nav > li.on > a > span:before,
+nav.navbar.bootsnav ul.nav > li.active > a > span:before,
+nav.navbar.bootsnav ul.nav > li > a:hover > span:before {
+  opacity: 1;
+  transform: rotateX(0) rotate(0);
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content li a:hover,
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:hover,
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a.dropdown-toggle:active,
+nav.navbar ul.nav li.dropdown.on ul.dropdown-menu li.dropdown.on > a {
+  background:#fcd462;
+  color:#262626;
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+  box-shadow: 0 0 10px #999;
+}
+nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
+  color: #fcd462;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  margin: 0 0 0 7px;
+}
+nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:focus:after,
+nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:hover:after {
+  color: #fff;
+}
+nav.navbar.bootsnav ul.nav > li.dropdown > ul {
+  opacity: 0;
+  top: 100%;
+  visibility: hidden;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0 0 0;
+  transition: all 0.5s ease-in-out 0s;
+}
+nav.navbar.bootsnav ul.nav > li.dropdown.on > ul {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: perspective(600px) rotateX(0deg);
+}
+.dropdown-menu.multi-dropdown {
+  position: absolute;
+  left: -100% !important;
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content li {
+  font-size: 14px;
+}
+nav.navbar.bootsnav
+  li.dropdown
+  ul.dropdown-menu.megamenu-content
+  .menu-col
+  li
+  a {
+  padding-left: 10px;
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title {
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 990px) {
+  .dropdown-menu.multi-dropdown {
+    left: 0 !important;
+  }
+  nav.navbar.bootsnav .navbar-toggle {
+    color: #000;
+    background: transparent !important;
+  }
+  nav.navbar.bootsnav ul.nav > li {
+    margin: 5px auto 15px;
+  }
+  nav.navbar.bootsnav.navbar-mobile ul.nav > li > a {
+    text-align: center;
+    padding: 10px 15px;
+    border: none;
+  }
+  nav.navbar.bootsnav ul.nav > li.dropdown > a {
+    padding: 10px 10px 10px 17px;
+  }
+  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:before {
+    color: #222;
+  }
+  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:focus:before,
+  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:hover:before {
+    color: #fff;
+  }
+  nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu > li > a {
+    color: #000;
+    padding-left: 10px;
+    border-bottom-color: none;
+  }
+  nav.navbar.bootsnav ul.nav > li.dropdown > ul {
+    top: 100%;
+  }
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title {
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+  }
+  nav.navbar.bootsnav
+    li.dropdown
+    ul.dropdown-menu.megamenu-content
+    .col-menu
+    li
+    a {
+    color: #000;
+  }
+}
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.navbar-nav>li {
+  float: none;
+  display: inline-block;
+}
